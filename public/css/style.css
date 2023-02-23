@@ -8,6 +8,19 @@ body {
   background: #0f0f0f !important;
   color: #fff !important;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: #7b7b7b;
+}
+
+::selection {
+  color: black;
+  background: #7b7b7b;
+}
 
 .whitespace {
   width: 100%;
