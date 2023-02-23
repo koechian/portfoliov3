@@ -1,0 +1,25 @@
+{
+    "location": {
+        "city": "Nairobi",
+        "country": "Kenya"
+    },
+    "education": {
+        "school": "Strathmore University",
+        "major": "Computer Science",
+        "expectedGraduation": "2024"
+    },
+    "interests": [
+        "mechanical engineering",
+        "code",
+        "going fast",
+        "turbo noises",
+        "sim racing"
+    ],
+    "latest work experience": {
+        "company": "Reeve Technologies",
+        "role": "Software Engineering Attache",
+        "startDate": "1st February 2023",
+        "endDate": "31st March 2023",
+        "isCurrent": "true"
+    }
+}
