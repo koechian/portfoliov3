@@ -295,7 +295,15 @@ h6 {
   position: absolute;
   left: 50%;
 }
-
+.footer-links {
+  text-decoration: none;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+.footer-links:hover {
+  text-decoration: none;
+  color: #fcaf45;
+}
 .code-window-wrapper {
   height: 800px;
   width: 100%;
