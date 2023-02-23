@@ -8,7 +8,7 @@
 
     <title>Portfolio | KOECHIAN</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/public/css/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,10 +19,10 @@
       rel="stylesheet"
     />
     <!-- terminal effect -->
-    <script src="t.min.js"></script>
+    <script src="/public/js/t.min.js"></script>
     <!-- for on scroll animations -->
-    <link rel="stylesheet" href="animate.css" />
-    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <script src="/public/js/wow.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -36,13 +36,18 @@
             <a href="index.html">home<span>.</span></a>
           </li>
           <li>
-            <a href="work.html">work<span>.</span></a>
+            <a href="/pages/work.html">work<span>.</span></a>
           </li>
           <li>
-            <a href="about.html">about me<span>.</span></a>
+            <a href="/pages/about.html">about me<span>.</span></a>
           </li>
           <li>
-            <a href="contact.html">contact<span>.</span></a>
+            <a download href="/assets/files/Ian Koech Resume.pdf"
+              >resume<span>.</span></a
+            >
+          </li>
+          <li>
+            <a href="/pages/contact.html">contact<span>.</span></a>
           </li>
         </ul>
 
@@ -59,33 +64,27 @@
             <a href="index.html">home<span>.</span></a>
           </li>
           <li>
-            <a href="work.html">work<span>.</span></a>
+            <a href="/pages/work.html">work<span>.</span></a>
           </li>
           <li>
-            <a href="about.html">about me<span>.</span></a>
+            <a href="/pages/about.html">about me<span>.</span></a>
           </li>
           <li>
-            <a href="contact.html">contact<span>.</span></a>
+            <a href="/pages/contact.html">contact<span>.</span></a>
           </li>
         </ul>
       </div>
-      <!--------------- navbar ends here --------------->
-
-      <!--------------- hero section starts here --------------->
       <div class="hero">
         <div class="header">
-          <h1 class="line anim-typewriter">Hi, I'm Ian, I make stuff :).</h1>
+          <h1 class="line anim-typewriter">Hi, I'm Ian, I code stuff :).</h1>
         </div>
       </div>
 
       <div class="scroll-down"></div>
-      <!--------------- hero section ends here --------------->
-
-      <!--------------- projects section starts here --------------->
       <div class="container-fluid">
         <br /><br /><br />
 
-        <h6>Selected projects</h6>
+        <h6>A little more about me</h6>
 
         <div class="vertical"></div>
         <br />
@@ -93,53 +92,23 @@
         <div class="whitespace"></div>
         <div class="whitespace"></div>
 
-        <div class="row">
-          <div class="col-lg-8"></div>
-
-          <div
-            class="col-lg-4 project project1 wow fadeInUp"
-            onclick="location.href='project.html'"
-          ></div>
+        <div class="code-window-wrapper">
+          <div class="code-window-frame">
+            <div class="code-window-titlebar">
+              <div class="traffic-lights">
+                <div class="traffic-lights-wrapper">
+                  <div class="traffic-lights-div red-light"></div>
+                  <div class="traffic-lights-div yellow-light"></div>
+                  <div class="traffic-lights-div green-light"></div>
+                </div>
+              </div>
+              <div class="search-bar-wrapper"></div>
+              <div class="right-elements-wrapper"></div>
+            </div>
+            <div class="code-window-body"></div>
+            <div class="bottom-bar"></div>
+          </div>
         </div>
-
-        <div class="whitespace"></div>
-
-        <div class="row">
-          <div
-            class="col-lg-6 project project2 wow fadeInUp"
-            onclick="location.href='project.html'"
-          ></div>
-
-          <div class="col-lg-6"></div>
-        </div>
-
-        <div class="whitespace"></div>
-
-        <div class="row">
-          <div class="col-lg-7"></div>
-
-          <div
-            class="col-lg-4 project project3 wow fadeInUp"
-            onclick="location.href='project.html'"
-          ></div>
-
-          <div class="col-lg-1"></div>
-        </div>
-
-        <div class="whitespace"></div>
-
-        <div class="row">
-          <div class="col-lg-1"></div>
-
-          <div
-            class="col-lg-5 project project4 wow fadeInUp"
-            onclick="location.href='project.html'"
-          ></div>
-
-          <div class="col-lg-6"></div>
-        </div>
-
-        <div class="whitespace"></div>
       </div>
       <!--------------- projects section ends here --------------->
 
