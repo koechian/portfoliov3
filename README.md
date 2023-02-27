@@ -4,6 +4,8 @@ I have probably redisigned this site more times than I can count. After numerous
 
 You can view the figma file [here](https://www.figma.com/file/X4MFOWYkOzLIP3xW53z88l/Porfolio-FInal?node-id=1%3A12&t=uokBcjxSyZvQyQgi-1) (The Vs Code window is **not** a screenshot, yep, that took long)
 
+** THIS IS STILL A WORK IN PROGRESS **
+
 ### Stuff
 
 - I used bootstrap wrappers and breakpoints for responsivity.
