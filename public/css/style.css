@@ -7,6 +7,7 @@ body {
   font-family: "Roboto Mono" !important;
   background: #0f0f0f !important;
   color: #fff !important;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -296,27 +297,8 @@ nav #menu li a:hover {
   }
 }
 
-/*--------------- projects section --------------- */
-h6 {
-  text-align: center;
-}
+/*--------------- vscode section --------------- */
 
-.vertical {
-  margin-top: 40px;
-  border-left: 1px solid #fff;
-  height: 80px;
-  position: absolute;
-  left: 50%;
-}
-.footer-links {
-  text-decoration: none;
-  color: white;
-  transition: ease-in-out 0.3s;
-}
-.footer-links:hover {
-  text-decoration: none;
-  color: #fcaf45;
-}
 .code-window-wrapper {
   height: 800px;
   width: 100%;
@@ -340,6 +322,28 @@ h6 {
   outline: yellow solid 2px;
 }
 .traffic-lights-wrapper {
+}
+/*--------------- vscode section --------------- */
+
+h6 {
+  text-align: center;
+}
+
+.vertical {
+  margin-top: 40px;
+  border-left: 1px solid #fff;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+}
+.footer-links {
+  text-decoration: none;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+.footer-links:hover {
+  text-decoration: none;
+  color: #fcaf45;
 }
 @media (max-width: 768px) {
   .project {
