@@ -587,3 +587,15 @@ textarea:focus {
 .next p {
   text-align: right;
 }
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
+.project-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  border-bottom: 3px solid #515152;
+}
+.projects-numbering {
+  color: #a2a09c;
+  font-family: "Fira Code", monospace;
+}
