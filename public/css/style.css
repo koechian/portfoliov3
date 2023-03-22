@@ -1,6 +1,7 @@
 /* GOOGLE FONTS */
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Rubik&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap");
 
 /* GOOGLE FONTS */
 
@@ -258,15 +259,19 @@ nav #menu li a:hover {
 }
 
 .hero h1 {
-  font-weight: lighter;
-  text-align: center;
+  font-family: "Inter Tight";
+  font-size: 3vw;
+  font-weight: medium;
+  text-align: left;
   letter-spacing: -2px;
   line-height: 58px;
+  padding: 0 5% 0 5%;
 }
 
 @media (max-width: 768px) {
   .header h1 {
     font-size: 26px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -344,7 +349,7 @@ h6 {
 .footer-links {
   text-decoration: none;
   color: white;
-  transition: ease-in-out 0.3s;
+  /* transition: ease-in-out 0.3s; */
 }
 .footer-links:hover {
   text-decoration: none;
@@ -603,4 +608,130 @@ textarea:focus {
 .projects-numbering {
   color: #a2a09c;
   font-family: "Fira Code", monospace;
+}
+/* Fancy Links Effect */
+
+@keyframes float {
+  from,
+  to {
+    transform: translateY(-0%);
+  }
+
+  50% {
+    transform: translateY(-3%);
+  }
+}
+
+.fancy span {
+  display: inline-block;
+}
+
+.fancy > .outer {
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .outer {
+  transition-duration: 800ms;
+}
+
+/* Link Letter separation */
+.fancy:hover > .outer:nth-child(1) {
+  margin-right: 4px;
+  transform: translate(-80%, 60%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(2) {
+  margin-right: 3px;
+  transform: translate(-40%, 20%) rotate(4deg);
+}
+
+.fancy:hover > .outer:nth-child(3) {
+  margin-right: 3px;
+  transform: translate(-10%, 60%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(4) {
+  margin-right: 4px;
+  transform: translate(0%, 8%) rotate(-8deg);
+}
+
+.fancy:hover > .outer:nth-child(5) {
+  margin-right: 4px;
+  transform: translate(0%, -20%) rotate(5deg);
+}
+
+.fancy:hover > .outer:nth-child(6) {
+  margin-right: 5px;
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(7) {
+  transform: translate(0%, -40%) rotate(-5deg);
+}
+
+.fancy:hover > .outer:nth-child(8) {
+  transform: translate(0%, 15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(9) {
+  transform: translate(0%, -50%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(10) {
+  transform: translate(0%, 15%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(11) {
+  transform: translate(50%, -10%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(12) {
+  transform: translate(120%, -30%) rotate(-10deg);
+}
+
+.scroller {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 3vw;
+}
+.scroller-wrapper {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  animation: scroll infinite 30s linear;
+}
+.left-scroller {
+  left: 0;
+  border-right: #51515285 1px solid;
+}
+.right-scroller {
+  right: 0;
+  border-left: #51515285 1px solid;
+}
+
+.conveyer-content {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: larger;
+}
+em {
+  font-style: normal;
+  font-size: large;
+  color: #fcb045;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
