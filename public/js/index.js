@@ -93,3 +93,7 @@ scroller("left-scroller-wrapper");
 scroller("right-scroller-wrapper");
 enhance("whatsapp-link");
 enhance("mail-link");
+console.log(
+  "%c \uD83E\uDD19 Developed by koechian",
+  "font-size: 12px;font-family: monospace;background: black;display: inline-block;color: white;padding: 15px;border: 2px solid white;"
+);
