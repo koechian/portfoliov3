@@ -8,13 +8,14 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   width: 100%;
   height: 100%;
   font-family: "Rubik" !important;
   background: #0f0f0f !important;
   color: #fff !important;
   scroll-behavior: smooth;
+  cursor: default;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -145,7 +146,7 @@ nav #menu li a:hover {
 
 #toggle {
   position: absolute;
-  right: 30px;
+  right: 65px;
   top: 20px;
   font-weight: 300;
   z-index: 2;
@@ -173,7 +174,7 @@ nav #menu li a:hover {
   top: 0px;
   position: fixed;
   background: #0f0f0f;
-  width: 100%;
+  width: 90%;
   height: 100%;
   visibility: hidden;
   opacity: 0;
@@ -266,12 +267,17 @@ nav #menu li a:hover {
   letter-spacing: -2px;
   line-height: 58px;
   padding: 0 5% 0 5%;
+  transition: ease-in-out 700ms;
 }
 
 @media (max-width: 768px) {
   .header h1 {
+    text-align: center;
     font-size: 26px;
     letter-spacing: 0.5px;
+  }
+  .footer {
+    margin-top: 30%;
   }
 }
 
@@ -312,31 +318,70 @@ nav #menu li a:hover {
 /*--------------- vscode section --------------- */
 
 .code-window-wrapper {
-  height: 800px;
+  height: 41vw;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .code-window-frame {
-  height: 90%;
-  width: 80%;
-  outline: #383b3d solid 1px;
+  height: 100%;
+  background-size: cover;
+  background-image: url(/public/carbon.svg);
+  pointer-events: none;
+  position: relative;
+  aspect-ratio: 16/9;
+  border: 2px solid rgba(128, 128, 128, 0.415);
   border-radius: 10px;
   background-color: #00000075;
   display: grid;
   grid-template-rows: 0.04fr 1fr 0.04fr;
+  overflow: hidden;
+  box-shadow: 10px 10px 100px #fbaf4525;
+  padding: 1px;
 }
-.code-window-titlebar {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  outline: yellow solid 2px;
+.code-window-frame::before {
+  background: linear-gradient(90deg, transparent, #fbaf45, transparent);
+  height: 1px;
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  opacity: 0;
+  transition: left ease 600ms, opacity 600ms ease;
+  content: "";
+}
+.code-window-frame::after {
+  background: linear-gradient(transparent, #fbaf45, transparent);
+  height: 60%;
+  width: 1px;
+  position: absolute;
+  top: 90%;
+  left: 0px;
+  /* opacity: 0; */
+  transition: top ease 600ms, opacity 600ms ease;
+  content: "";
+}
+.code-window-frame:hover:after {
+  top: 30%;
+  opacity: 1;
+}
+.code-window-frame:hover:before {
+  left: 50%;
+  opacity: 1;
+}
+.code-window-image {
+  aspect-ratio: 16/ 9;
+  max-height: 80vh;
 }
 /*--------------- vscode section --------------- */
 
 h6 {
   text-align: center;
+}
+.custom-color {
+  color: #fbaf45dc;
+  text-shadow: 0px 0px 20px #fbaf454d;
 }
 
 .vertical {
@@ -370,6 +415,9 @@ h6 {
   .project3::after,
   .project4::after {
     display: none;
+  }
+  .code-window-frame {
+    height: 70vw;
   }
 }
 
@@ -504,9 +552,10 @@ h6 {
 }
 
 .image {
-  background: url(https://images.unsplash.com/photo-1532898699536-ebfd45481a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&w=970&q=100)
-    no-repeat 50% 50%;
+  background: url(https://images.unsplash.com/photo-1532898699536-ebfd45481a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&w=1920&q=100);
   filter: grayscale(1);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /*--------------- contact form --------------- */
@@ -545,10 +594,12 @@ h6 {
   background: transparent;
   color: #fff;
   font-weight: bolder;
+  transition: ease-in-out 300ms;
 }
 
 input:focus {
   outline: none;
+  border: none;
   border: none;
 }
 
@@ -559,8 +610,8 @@ textarea:focus {
 
 .textarea {
   border-bottom: 1px solid #dfdfdf;
+  transition: ease-in-out;
 }
-
 .send {
   margin-left: 50px;
   text-transform: uppercase;

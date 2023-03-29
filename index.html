@@ -18,11 +18,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="/public/js/t.min.js"></script>
     <!-- for on scroll animations -->
-    <link rel="stylesheet" href="/public/css/animate.css" />
     <script src="/public/js/wow.min.js"></script>
+    <link rel="stylesheet" href="/public/css/animate.css" />
   </head>
   <body>
-    <div id="left-scroller" class="left-scroller scroller">
+    <div
+      id="left-scroller"
+      class="wow slideInLeft left-scroller scroller"
+      data-wow-duration="2s"
+      data-wow-delay="0.5s"
+    >
       <div id="left-scroller-wrapper" class="scroller-wrapper"></div>
     </div>
     <div class="wrapper">
@@ -81,11 +86,15 @@
       </div>
       <div class="hero">
         <div class="header">
-          <h1 class="lineanim-typewriter">
-            Hi, I'm Ian,<br />
-            an aspiring Software Engineer and Web Developer
+          <h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+            Hi, I'm <span id="ian" class="fancy custom-color">Ian</span>,<br />
+            an aspiring
+
+            <span id="software" class="fancy custom-color"> Software </span>
+            <span id="engineer" class="fancy custom-color"> Engineer </span>
+            and
             <br />
-            based in Nairobi Kenya.
+            Full Stack Web Developer based in Nairobi Kenya.
           </h1>
         </div>
       </div>
@@ -103,23 +112,12 @@
         <div class="whitespace"></div>
 
         <div class="code-window-wrapper">
-          <div class="code-window-frame">
-            <div class="code-window-titlebar">
-              <div class="traffic-lights">
-                <div class="traffic-lights-wrapper">
-                  <div class="traffic-lights-div red-light"></div>
-                  <div class="traffic-lights-div yellow-light"></div>
-                  <div class="traffic-lights-div green-light"></div>
-                </div>
-              </div>
-              <div class="search-bar-wrapper"></div>
-              <div class="right-elements-wrapper"></div>
-            </div>
-            <div class="code-window-body"></div>
-            <div class="bottom-bar"></div>
-          </div>
+          <div class="code-window-frame"></div>
         </div>
       </div>
+      <div class="whitespace"></div>
+      <div class="whitespace"></div>
+
       <!--------------- footer starts here --------------->
       <div class="footer">
         <div class="container">
@@ -216,7 +214,12 @@
 
       <br /><br /><br /><br />
     </div>
-    <div id="right-scroller" class="right-scroller scroller">
+    <div
+      id="right-scroller"
+      class="wow slideInRight right-scroller scroller"
+      data-wow-duration="2s"
+      data-wow-delay="0.5s"
+    >
       <div class="scroller-wrapper" id="right-scroller-wrapper"></div>
     </div>
 
