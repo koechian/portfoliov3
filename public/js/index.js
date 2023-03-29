@@ -78,7 +78,7 @@ const enhance = (id) => {
 const scroller = (id) => {
   const element = document.getElementById(id);
 
-  for (let i = 0; i < 21; i++) {
+  for (let i = 0; i < 40; i++) {
     const span = document.createElement("span");
 
     span.className = "conveyer-content";
@@ -89,10 +89,17 @@ const scroller = (id) => {
   }
 };
 
+// various animation function calls
 scroller("left-scroller-wrapper");
 scroller("right-scroller-wrapper");
+
 enhance("whatsapp-link");
 enhance("mail-link");
+enhance("ian");
+enhance("software");
+enhance("engineer");
+
+// Custom console.log
 console.log(
   "%c \uD83E\uDD19 Developed by koechian",
   "font-size: 12px;font-family: monospace;background: black;display: inline-block;color: white;padding: 15px;border: 2px solid white;"
