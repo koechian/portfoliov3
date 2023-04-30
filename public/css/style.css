@@ -265,7 +265,6 @@ nav #menu li a:hover {
   font-weight: medium;
   text-align: left;
   letter-spacing: -2px;
-  line-height: 58px;
   padding: 0 5% 0 5%;
   transition: ease-in-out 700ms;
 }
@@ -542,6 +541,13 @@ h6 {
     width: 96%;
     margin: 0 auto;
   }
+  .h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-row {
+    margin-top: 15px;
+  }
 }
 
 /*---------------about page --------------- */
@@ -631,6 +637,9 @@ textarea:focus {
   #contact-form {
     margin: 5% -8%;
     width: 98%;
+  }
+  .about {
+    height: 20em;
   }
 }
 
