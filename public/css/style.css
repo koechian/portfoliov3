@@ -326,7 +326,7 @@ nav #menu li a:hover {
 .code-window-frame {
   height: 100%;
   background-size: cover;
-  background-image: url(/public/carbon.svg);
+  background-image: url(./public/carbon.svg);
   pointer-events: none;
   position: relative;
   aspect-ratio: 16/9;
@@ -644,7 +644,6 @@ textarea:focus {
 }
 
 /*--------------- project page --------------- */
-
 .prev,
 .next p {
   color: grey;
