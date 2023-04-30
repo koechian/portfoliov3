@@ -17,7 +17,7 @@ $(".close-btn").click(function () {
 
 // nav animation
 TweenMax.from("#brand", 1, {
-  delay: 0.4,
+  delay: 3.9,
   y: 10,
   opacity: 0,
   ease: Expo.easeInOut,
@@ -27,13 +27,44 @@ TweenMax.staggerFrom(
   "#menu li a",
   1,
   {
-    delay: 0.4,
+    delay: 3.9,
     opacity: 0,
     ease: Expo.easeInOut,
   },
   0.1
 );
 
+TweenMax.staggerTo(
+  ".block",
+  0.8,
+  {
+    width: "0%",
+    ease: Power1.easeOut,
+    delay: 2,
+  },
+  0.04
+);
+
+TweenMax.to(
+  ".loader",
+  1,
+  {
+    x: 2,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 1.5,
+  },
+  0.04
+);
+TweenMax.to(
+  ".loader-container",
+  1,
+  {
+    display: "none",
+    delay: 3.7,
+  },
+  0.04
+);
 // nav animation ends
 new WOW().init();
 
