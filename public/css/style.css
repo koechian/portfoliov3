@@ -40,6 +40,13 @@ body {
   .whitespace {
     display: none;
   }
+  .conveyer-content,
+  em {
+    font-size: normal !important;
+  }
+  .scroller {
+    width: 4vw !important;
+  }
 }
 
 /*--------------- typewriter effect --------------- */
@@ -326,6 +333,7 @@ nav #menu li a:hover {
 .code-window-frame {
   height: 100%;
   background-size: cover;
+  -webkit-background-size: cover;
   background-image: url(../carbon.svg);
   pointer-events: none;
   position: relative;
@@ -400,19 +408,7 @@ h6 {
   color: #fcaf45;
 }
 @media (max-width: 768px) {
-  .project {
-    width: 90% !important;
-    margin: 14px auto;
-  }
-
   .vertical {
-    display: none;
-  }
-
-  .project1::after,
-  .project2::after,
-  .project3::after,
-  .project4::after {
     display: none;
   }
   .code-window-frame {
