@@ -1,0 +1,18 @@
+{
+    "location": {
+        "city": "Nairobi",
+        "country": "Kenya"
+    },
+    "education": {
+        "school": "Strathmore University",
+        "course": "Bsc. Computer Science and Informatics",
+        "expectedGradDate": "July 2024"
+    },
+    "latest work experience": {
+        "company": "Reeve Technologies",
+        "role": "Software Engineering Attache'",
+        "from": "1st February 2023",
+        "to": "31st March 2023",
+        "isCurrent": false
+    }
+}
